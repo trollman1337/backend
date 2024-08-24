@@ -25,7 +25,7 @@ const authenticate = (req, res, next) => {
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 1 minute window
   max: 5, // Limit each IP to 5 requests per windowMs
-  message: { error: 'Rate limit exceeded: Too many requests, your IP is blocked for a minute' },
+  message: { error: 'Rate limit exceeded: Too many requests, your IP is blocked for a minute: trollface' },
   standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
