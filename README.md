@@ -156,4 +156,4 @@ bash
 
 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/trollman1337/backend/blob/main/LICENSE) file for details.
