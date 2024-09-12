@@ -25,9 +25,9 @@ This project is a simple Node.js Express API that fetches content from a given U
     Install dependencies:
 
     bash
-
+```
 npm install
-
+```
 Create an .env file:
 
 Create a file named .env in the root of your project and add the following environment variable:
@@ -44,11 +44,11 @@ Starting the Server
 Start the server using the following command:
 
 bash
-
+```
 npm start
-
+```
 The server will start on port 4000 by default. You can access it at http://localhost:4000.
-Making Requests
+## Making Requests
 
 To make requests, you'll need to provide an access key in the x-access-key header. Here's an example using curl:
 
@@ -63,12 +63,13 @@ curl -H "x-access-key: your-access-key-1" "http://localhost:4000/fetch?url=https
 
 Each IP address is limited to 5 requests per minute. If the limit is exceeded, the following message will be returned:
 
-json ```
+json 
 
-{
+```{
   "error": "Rate limit exceeded: Too many requests, your IP is blocked for a minute: trollface"
 }
 ```
+
 API Endpoints
 GET /fetch
 
