@@ -1,6 +1,6 @@
-Node.js Express API with Access Key Authentication and Rate Limiting
+##Node.js Express API with Access Key Authentication and Rate Limiting
 
-This project is a simple Node.js Express API that fetches content from a given URL while enforcing access key-based authentication and rate limiting. It uses dotenv for environment variable management and supports CORS for cross-origin resource sharing.
+#This project is a simple Node.js Express API that fetches content from a given URL while enforcing access key-based authentication and rate limiting. It uses dotenv for environment variable management and supports CORS for cross-origin resource sharing.
 Features
 
     Access Key Authentication: API requests are authenticated using access keys provided via request headers.
@@ -8,21 +8,12 @@ Features
     CORS Support: Enables cross-origin requests for better frontend integration.
     Fetch External Data: Uses Axios to fetch data from a given URL.
 
-Prerequisites
+#Prerequisites
 
     Node.js (version 12.x or higher)
     npm
 
-Installation
-
-    Clone the repository:
-
-    bash
-
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
-
-Install dependencies:
+#Install dependencies:
 
 bash
 
@@ -32,7 +23,7 @@ Create an .env file:
 
 Create a file named .env in the root of your project and add the following environment variable:
 
-env
+bash
 
     ACCESS_KEYS=your-access-key-1,your-access-key-2
 
