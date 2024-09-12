@@ -63,12 +63,12 @@ curl -H "x-access-key: your-access-key-1" "http://localhost:4000/fetch?url=https
 
 Each IP address is limited to 5 requests per minute. If the limit is exceeded, the following message will be returned:
 
-json
+json ```
 
 {
   "error": "Rate limit exceeded: Too many requests, your IP is blocked for a minute: trollface"
 }
-
+```
 API Endpoints
 GET /fetch
 
@@ -86,13 +86,15 @@ Response
 
 Example Request:
 
-bash
+```bash
 
 curl -H "x-access-key: your-access-key" "http://localhost:4000/fetch?url=https://jsonplaceholder.typicode.com/todos/1"
+```
 
 Example Response:
 
 json
+```
 
 {
   "userId": 1,
@@ -100,41 +102,42 @@ json
   "title": "delectus aut autem",
   "completed": false
 }
-
+```
 ## Error Handling
 
     Invalid Access Key: If an invalid access key is provided, the API returns a 403 Forbidden response with the message:
 
     json
 
-{
+```{
   "error": "Forbidden: Invalid access key"
 }
+```
 
 ## Missing URL Parameter: If no URL is provided in the request, the API returns a 400 Bad Request response:
 
 json
-
+```
 {
   "error": "URL query parameter is required"
 }
-
+```
 ## Rate Limit Exceeded: If too many requests are made from the same IP within a minute, the API returns a 429 Too Many Requests response:
 
 json
-
+```
 {
   "error": "Rate limit exceeded: Too many requests, your IP is blocked for a minute: trollface"
 }
-
+```
 Failed to Fetch Content: If there is an issue fetching the content from the provided URL (e.g., the server is down), the API returns a 500 Internal Server Error response:
 
 json
-
+```
     {
       "error": "Failed to fetch content"
     }
-
+```
 ## Project Structure
 
 bash
