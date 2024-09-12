@@ -19,8 +19,8 @@ This project is a simple Node.js Express API that fetches content from a given U
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
+   git clone https://github.com/your-username/your-repository.git](https://github.com/trollman1337/backend.git
+   cd backend.git
 
     Install dependencies:
 
@@ -38,7 +38,7 @@ bash
 
     Replace your-access-key-1 and your-access-key-2 with actual keys you want to use for authenticating API requests. You can add as many keys as needed, separated by commas.
 
-Usage
+## Usage
 Starting the Server
 
 Start the server using the following command:
@@ -59,7 +59,7 @@ curl -H "x-access-key: your-access-key-1" "http://localhost:4000/fetch?url=https
     Replace your-access-key-1 with one of the keys from your .env file.
     The url query parameter is required and should be the full URL of the resource you want to fetch.
 
-Rate Limiting
+## Rate Limiting
 
 Each IP address is limited to 5 requests per minute. If the limit is exceeded, the following message will be returned:
 
@@ -101,7 +101,7 @@ json
   "completed": false
 }
 
-Error Handling
+## Error Handling
 
     Invalid Access Key: If an invalid access key is provided, the API returns a 403 Forbidden response with the message:
 
@@ -111,7 +111,7 @@ Error Handling
   "error": "Forbidden: Invalid access key"
 }
 
-Missing URL Parameter: If no URL is provided in the request, the API returns a 400 Bad Request response:
+## Missing URL Parameter: If no URL is provided in the request, the API returns a 400 Bad Request response:
 
 json
 
@@ -119,7 +119,7 @@ json
   "error": "URL query parameter is required"
 }
 
-Rate Limit Exceeded: If too many requests are made from the same IP within a minute, the API returns a 429 Too Many Requests response:
+## Rate Limit Exceeded: If too many requests are made from the same IP within a minute, the API returns a 429 Too Many Requests response:
 
 json
 
@@ -135,7 +135,7 @@ json
       "error": "Failed to fetch content"
     }
 
-Project Structure
+## Project Structure
 
 bash
 
@@ -146,7 +146,7 @@ bash
 ├── package-lock.json   # Exact versions of installed dependencies
 └── server.js           # Main server code
 
-Environment Variables
+## Environment Variables
 
     ACCESS_KEYS: A comma-separated list of valid access keys for authenticating requests.
 
