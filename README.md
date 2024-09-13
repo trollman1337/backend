@@ -19,7 +19,7 @@ This project is a simple Node.js Express API that fetches content from a given U
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git](https://github.com/trollman1337/backend.git
+   git clone https://github.com/trollman1337/backend.git
    cd backend.git
 
     Install dependencies:
