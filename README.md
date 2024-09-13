@@ -18,15 +18,16 @@ This project is a simple Node.js Express API that fetches content from a given U
 
 1. **Clone the repository**:
 
-   ```bash
+   bash
+   ```
    git clone https://github.com/trollman1337/backend.git
    cd backend.git
+   ```
 
     Install dependencies:
 
     bash
-```
-npm install
+  ``` npm install
 ```
 Create an .env file:
 
