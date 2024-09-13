@@ -27,8 +27,7 @@ This project is a simple Node.js Express API that fetches content from a given U
     Install dependencies:
 
     bash
-  ``` npm install
-```
+  ``` npm install```
 Create an .env file:
 
 Create a file named .env in the root of your project and add the following environment variable:
