@@ -27,7 +27,10 @@ This project is a simple Node.js Express API that fetches content from a given U
     Install dependencies:
 
     bash
-  ``` npm install```
+
+``` npm install```
+
+
 Create an .env file:
 
 Create a file named .env in the root of your project and add the following environment variable:
@@ -54,10 +57,10 @@ To make requests, you'll need to provide an access key in the x-access-key heade
 
 bash
 
-curl -H "x-access-key: your-access-key-1" "http://localhost:4000/fetch?url=https://example.com"
+```curl -H "x-access-key: your-access-key-1" "http://localhost:4000/fetch?url=https://example.com"```
 
     Replace your-access-key-1 with one of the keys from your .env file.
-    The url query parameter is required and should be the full URL of the resource you want to fetch.
+   
 
 ## Rate Limiting
 
